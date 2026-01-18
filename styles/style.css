@@ -19,6 +19,7 @@
   background-color: #1A0B2E;
 }
 
+
 /* shared style */
 .disply-flex{
   display: flex;
@@ -49,6 +50,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px 0px;
+ 
 }
 
 #nav-container .text-tech{
@@ -96,10 +98,10 @@
 .hero-container{
   height: 760px;
   background-image: url(../images/hero-bg.png);
-  background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
+   border-top: 1px solid rgba(128, 128, 128, 0.26);
 }
 
 .hero-content{
@@ -130,6 +132,12 @@
   margin-bottom: 24px;
 }
 
+.hero-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 
 .Subscribe-btn {
   background: transparent;
@@ -147,4 +155,35 @@
 
 .Subscribe-btn:hover{
   background: #00ff8842;
+}
+
+.about-content{
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about-content p{
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+
+}
+
+.line{
+  width: 75%;
+  max-width: 1200px;
+  border-top: 1px solid rgba(128, 128, 128, 0.26);
+  margin: 0 auto;
 }
