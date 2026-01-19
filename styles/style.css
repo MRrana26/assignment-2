@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+  background-color: #230E3D;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -110,6 +114,21 @@
   align-items: center;
 }
 
+#badge{
+  background-color: #00FF88;
+  color: #1A0B2E;
+  font-size: 1.3rem;
+  font-weight: 600px;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 16px;
+  position: absolute;
+  margin-top: -270px;
+  margin-left: 240px;
+
+
+}
+
 .hero-logo{
   background-image: url(../images/hero-circle.png);
   width: 350px;
@@ -119,6 +138,7 @@
   align-items: center;
   margin-bottom: 40px;
 }
+
 
 .hero-content h1{
   font-size: 3.75rem;
@@ -186,4 +206,70 @@
   max-width: 1200px;
   border-top: 1px solid rgba(128, 128, 128, 0.26);
   margin: 0 auto;
+}
+
+.about-statistics-container{
+  width: 75%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.statistics-title{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00FF88;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 80px;
+}
+
+.statistics-descripton{
+  line-height: 20px;
+  color: white;
+}
+
+#choose-section{
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.choose-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+
+}
+
+.box1{
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.box2{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.box3{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.box4{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.box5{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.choose-box{
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px;
 }
