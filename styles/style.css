@@ -466,12 +466,13 @@ footer{
 }
 
 .anim-ball{
-  width: 25px;
-  height: 25px;
-  background-image: linear-gradient(to right, #492974, #7b6597, #d1c1e7 );
+  width: 2px;
+  height: 2px;
+  background-image: linear-gradient(to right, #492974, #7b6597, #d1c1e7);
   position: relative;
   border-radius: 50%;
   animation: myAnim 5s ease-in-out 1s infinite alternate;
+  margin: 0 auto;
 }
 
 
@@ -481,7 +482,8 @@ footer{
     
   }
   100%{
-    left: 400px;
+    width: 95%;
+    background-image: linear-gradient(to left, gold, #492974, rgb(211, 68, 68));
   }
 }
 
