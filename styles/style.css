@@ -151,7 +151,6 @@ body{
   position: absolute;
   margin-top: -270px;
   margin-left: 240px;
-  animation: myAnim 4s linear infinite;
 }
 
 .hero-logo{
@@ -397,7 +396,7 @@ body{
 .host-content h1{
   font-size: 2rem;
   font-weight: 700;
-  padding-bottom: 16px;
+  padding-bottom: 6px;
   color: white;
 }
 
@@ -415,6 +414,7 @@ footer{
   padding-bottom: 120px;
   background-image: url(../images/footer-bg.png);
   background-position: center;
+
 }
 
 #footer h1{
@@ -465,21 +465,24 @@ footer{
 
 }
 
-@keyframes myAnim {
-
-from{
-  transform: rotate(2deg);
-  font-size: 1.rem;
+.anim-ball{
+  width: 25px;
+  height: 25px;
+  background-image: linear-gradient(to right, #492974, #7b6597, #d1c1e7 );
+  position: relative;
+  border-radius: 50%;
+  animation: myAnim 5s ease-in-out 1s infinite alternate;
 }
-  0% {background-color: #00FF88;}
-  25% {background-color: #16fc91;}
-  50% {background-color: #37f79d;}
-  100% {background-color: #94fdcc;}
 
-  0% {color: #1A0B2E;}
-  25% {color: #2a114b;}
-  50% {color: #4e2a7c;}
-  100% {color: #754cac;}
+
+@keyframes myAnim {
+  0%{
+    left: 0px;
+    
+  }
+  100%{
+    left: 400px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -519,6 +522,7 @@ from{
   font-size: 1rem;
   margin-top: -150px;
   margin-left: 160px;
+  cursor: pointer;
 }
 
 .hero-content h1{
